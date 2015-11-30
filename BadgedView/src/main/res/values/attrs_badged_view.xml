@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BadgedImageView">
+        <attr name="badgeColor" format="color|reference"/>
+        <attr name="badgeText" format="dimension|reference"/>
+        <attr name="badgeTextSize" format="string|reference"/>
+        <attr name="badgeTextColor" format="color|reference"/>
+        <attr name="badgePadding" format="dimension|reference"/>
+        <attr name="badgeWidthRatio" format="integer"/>
+        <attr name="badgeHeightRatio" format="integer"/>
+        <attr name="badgeCornerRadius" format="dimension|reference"/>
+    </declare-styleable>
+</resources>
