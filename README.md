@@ -2,6 +2,8 @@
 
 [English Version](README_ENGLISH.md)
 
+BadgedView 能够为任意一个 View 添加矩形或三角形标签。
+
 BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑体育](http://mobile.hupu.com/?_r=globalNav) 用来给图片添加标签的控件。原作者的实现里，只能为 ImageView 添加 Badge，我看了看他的代码（[开源](https://github.com/yesidlazaro/BadgedImageview)）发现这个控件其实蛮简单的，想法挺好，但是代码写的不是特别好。而且我觉得应该能将这个控件应用到任意一个 View 上边，所以我根据我的想法实现了 BadgedView。
 
 效果图：
