@@ -32,7 +32,7 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 ```
 dependencies {
     ...
-    compile project('com.github.chaossss:BadgedView:1.1.1')
+    compile project('com.github.chaossss:BadgedView:1.0.0')
 }
 ```
 
