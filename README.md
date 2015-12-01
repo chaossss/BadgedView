@@ -23,8 +23,9 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 
 ## Processing
 
-- 不需要实现子类就能为每一个 View 添加任意多的标签
 - 用图片作为标签
+- 不需要实现子类就能为每一个 View 添加任意多的标签
+- 不需要修改布局文件，直接调用 BadgedView.attach(View v) 即可完成标签添加
 
 #Usage
 
