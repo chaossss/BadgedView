@@ -22,8 +22,9 @@ PreView：
 
 ## Processing
 
-- add any number of badges u want without implementing a subclass of BadgedView
 - uses image as badge
+- add any number of badges u want without implementing a subclass of BadgedView
+- call BadgedView.attach(View v) to show badges into a view without changing layout xml
 
 #Usage
 
