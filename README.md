@@ -31,9 +31,7 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 
 ##Dependency
 
-###Min SDK
-
-15
+###Min SDK：2.3.3
 
 ###Add Dependency
 
