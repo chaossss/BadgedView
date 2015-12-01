@@ -59,7 +59,7 @@ dependencies {
 | showBadge(boolean show) | show the badge |
 | setBadgeText(String newText) | set badge's text |
 
-##Custom BadgedView
+##Customize BadgedView
 
 1. Creates a subclass which extends from BadgedView，BadgedView completes attrs' initialize
 2. Adds your specified attr scope in subclass
