@@ -60,7 +60,7 @@ dependencies {
 | showBadge(boolean show) | 显示标签 |
 | setBadgeText(String newText) | 设置标签显示文字 |
 
-##Custom BadgedView
+##Customize BadgedView
 
 1. 继承 BadgedView，父类 BadgedView 已经有了标签常用的属性
 2. 在子类添加你所需要的特定的属性域
