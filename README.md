@@ -31,12 +31,18 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 
 ##Dependency
 
+###Min SDK
+
+15
+
+###Add Dependency
+
 在项目的 build.gradle 里添加：
 
 ```
 dependencies {
     ...
-    compile project('com.github.chaossss:BadgedView:1.0.0')
+    compile project('com.github.chaossss:BadgedView:1.0.1')
 }
 ```
 
