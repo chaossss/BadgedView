@@ -24,6 +24,7 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 ## Processing
 
 - 不需要实现子类就能为每一个 View 添加任意多的标签
+- 用图片作为标签
 
 #Usage
 
