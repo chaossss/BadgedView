@@ -30,9 +30,7 @@ PreView：
 
 ##Dependency
 
-###Min SDK
-
-15
+###Min SDK：2.3.3
 
 ###Add dependency
 
