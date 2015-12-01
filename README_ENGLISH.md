@@ -23,6 +23,7 @@ PreView：
 ## Processing
 
 - add any number of badges u want without implementing a subclass of BadgedView
+- uses image as badge
 
 #Usage
 
