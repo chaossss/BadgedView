@@ -1,4 +1,5 @@
 <resources>
+    <string name="lab_num">1</string>
     <string name="app_name">BadgedView</string>
     <string name="lab_gif">GIF</string>
     <string name="lab_video">VIDEO</string>

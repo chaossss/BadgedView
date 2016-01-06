@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.github.chaossss.widget.view.CircleBadgedView;
 import com.github.chaossss.widget.view.RecBadgedView;
 import com.github.chaossss.widget.view.TriBadgedView;
 
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private TriBadgedView triView;
 
+    private CircleBadgedView circleBadgedView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         anyView = (RecBadgedView) findViewById(R.id.badge_any_view);
         scaleView = (RecBadgedView) findViewById(R.id.badge_scale_view);
         regularView = (RecBadgedView) findViewById(R.id.badge_regular_view);
+        circleBadgedView = (CircleBadgedView) findViewById(R.id.badge_circle_view);
 
         triView = (TriBadgedView) findViewById(R.id.badge_tri_view);
 
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         regularView.showBadge(true);
 
         triView.showBadge(true);
+        circleBadgedView.showBadge(true);
     }
 
     @Override

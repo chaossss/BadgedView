@@ -8,32 +8,27 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 
 import com.github.chaossss.widget.R;
-import com.github.chaossss.widget.badge.RecBadge;
+import com.github.chaossss.widget.badge.CircleBadge;
 
 /**
- * An extension to {@link BadgedView} which has a Rectangle Badge.
- * Created by chaos on 2015/11/25.
+ * Created by chaos on 2016/1/6.
  */
-
-public class RecBadgedView extends BadgedView {
-    private int recbadgeGravity;
+public class CircleBadgedView extends BadgedView {
+    private int circlebadgeGravity;
     private boolean badgeBoundsSet = false;
 
-    public RecBadgedView(Context context, AttributeSet attrs) {
+    public CircleBadgedView(Context context, AttributeSet attrs) {
         super(context, attrs);
-
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RecBadgedView, 0, 0);
-        recbadgeGravity = a.getInt(R.styleable.RecBadgedView_recbadgeGravity, Gravity.TOP | Gravity
-                .LEFT);
+        circlebadgeGravity = a.getInt(R.styleable.CircleBadgedView_circlebadgeGravity, Gravity.TOP | Gravity
+                .RIGHT);
         a.recycle();
     }
 
     @Override
     public void initBadge(Context context) {
-        badge = new RecBadge(context, badgeText, badgeColor, badgeTextColor);
-        badge.setPadding(badgePadding);
+        badge = new CircleBadge(context, badgeText, badgeColor, badgeTextColor);
         badge.setTextSize(badgeTextSize);
-        badge.setCornerRadius(badgeCornerRadius);
     }
 
     @Override
@@ -51,12 +46,10 @@ public class RecBadgedView extends BadgedView {
     private void layoutBadge() {
         Rect badgeBounds = badge.getBounds();
 
-        Gravity.apply(recbadgeGravity,
+        Gravity.apply(circlebadgeGravity,
                 badge.getIntrinsicWidth(),
                 badge.getIntrinsicHeight(),
                 new Rect(0, 0, getWidth(), getHeight()),
-                badgePadding,
-                badgePadding,
                 badgeBounds);
         badge.setBounds(badgeBounds);
         badgeBoundsSet = true;

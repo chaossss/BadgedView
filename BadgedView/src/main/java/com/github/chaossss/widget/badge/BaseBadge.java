@@ -58,10 +58,6 @@ public class BaseBadge extends Drawable {
 
     @Override
     public void draw(Canvas canvas) {
-        if(badge == null) {
-            initBadge();
-        }
-        canvas.drawBitmap(badge, getBounds().left, getBounds().top, paint);
     }
 
     public void initBadge(){

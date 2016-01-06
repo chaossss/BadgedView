@@ -2,8 +2,8 @@
 <resources>
     <declare-styleable name="BadgedImageView">
         <attr name="badgeColor" format="color|reference"/>
-        <attr name="badgeText" format="dimension|reference"/>
-        <attr name="badgeTextSize" format="string|reference"/>
+        <attr name="badgeText" format="string|reference"/>
+        <attr name="badgeTextSize" format="dimension|reference"/>
         <attr name="badgeTextColor" format="color|reference"/>
         <attr name="badgePadding" format="dimension|reference"/>
         <attr name="badgeWidthRatio" format="integer"/>

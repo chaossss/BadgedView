@@ -8,6 +8,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <com.github.chaossss.widget.view.CircleBadgedView
+            android:id="@+id/badge_circle_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:foreground="?selectableItemBackground"
+            app:badgeTextColor="@color/white"
+            app:badgeColor="@color/red"
+            app:badgeText="@string/lab_num">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/gem"/>
+        </com.github.chaossss.widget.view.CircleBadgedView>
+
         <com.github.chaossss.widget.view.RecBadgedView
             android:id="@+id/badge_scale_view"
             android:layout_width="200dp"

@@ -55,12 +55,20 @@ public class RecBadge extends BaseBadge {
             canvas.drawRoundRect(0, 0, width, height, cornerRadius, cornerRadius, backgroundPaint);
         }else {
             // TODO: 11/21/15 support cornerRadius for api < 21
-            canvas.drawRect(0, 0, width, height,backgroundPaint);
+            canvas.drawRect(0, 0, width, height, backgroundPaint);
         }
 
         // punch out the word ,leaving transparency
         textPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
         canvas.drawText(badgeText, padding, height - padding, textPaint);
+    }
+
+    @Override
+    public void draw(Canvas canvas) {
+        if(badge == null) {
+            initBadge();
+        }
+        canvas.drawBitmap(badge, getBounds().left, getBounds().top, paint);
     }
 
     @Override
