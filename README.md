@@ -20,6 +20,7 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 - 将标签应用于任意 View
 - 可在标签所在布局设置长宽比例
 - 设置矩形标签或三角形标签在视图中的位置
+- 为任意 View 添加矩形、三角形、圆形标签
 
 ## Processing
 
