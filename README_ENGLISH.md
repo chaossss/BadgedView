@@ -39,7 +39,7 @@ Open you Project's build.gradle, and add line like this：
 ```
 dependencies {
     ...
-    compile project('com.github.chaossss:BadgedView:1.0.1')
+    compile 'com.github.chaossss:BadgedView:1.1.0'
 }
 ```
 
