@@ -66,11 +66,11 @@ public class TriBadge extends BaseBadge {
         textPaint.getTextBounds(badgeText, 0, badgeText.length(), textBounds);
 
         //Calculates triangle badges's length by the input badgeText's length
-        triLength = (int)(textBounds.width() * SQUARE5);
+        triLength = (int)((textBounds.height() / 4 * 7 + textBounds.width() / 2) * SQUARE2);
 
         drawTribadgePath(canvas, path, backgroundPaint);
 
-        float textYOffset = (float)(triLength * SQUARE2 / 4);
+        float textYOffset = textBounds.height() / 8 * 11;
         //Keep the offset distance
         if(tribadgeGravity >> 1 == 0){
             textYOffset = -textYOffset / 2;
