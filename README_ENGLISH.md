@@ -38,7 +38,7 @@ Open you Project's build.gradle, and add line like this：
 ```
 dependencies {
     ...
-    compile 'com.github.chaossss:BadgedView:1.1.0'
+    compile 'com.github.chaossss:BadgedView:1.1.1'
 }
 ```
 
