@@ -10,7 +10,7 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 
 ![](example.png)
 
-#Feature
+# Feature
 
 ## Implemented
 
@@ -27,13 +27,13 @@ BadgedImageView 就是 [Plaid](https://github.com/nickbutcher/plaid) 和 [虎扑
 - 添加其他样式的标签
 - 不需要实现子类就能为每一个 View 添加任意多的标签
 
-#Usage
+# Usage
 
-##Dependency
+## Dependency
 
-###Min SDK：2.3.3
+### Min SDK：2.3.3
 
-###Add Dependency
+### Add Dependency
 
 在项目的 build.gradle 里添加：
 
@@ -44,7 +44,7 @@ dependencies {
 }
 ```
 
-##Attr
+## Attr
 
 | Attr | usage |
 |---------|--------|
@@ -58,14 +58,14 @@ dependencies {
 | app:recbadgeGravity(RecBadgedView) | 设置矩形标签的位置 |
 | app:tribadgeGravity(TriBadgedView) | 设置三角标签的位置 |
 
-##API
+## API
 
 | API | usage |
 |---------|--------|
 | showBadge(boolean show) | 显示标签 |
 | setBadgeText(String newText) | 设置标签显示文字 |
 
-##Customize BadgedView
+## Customize BadgedView
 
 1. 继承 BadgedView，父类 BadgedView 已经有了标签常用的属性
 2. 在子类添加你所需要的特定的属性域
@@ -77,7 +77,7 @@ dependencies {
 5. 在子类添加你所需要的特定的属性域
 6. 重写 initBadge()，在其中对 badge 完成你所需要的标签的绘制工作
 
-##Activity
+## Activity
 
 ```java
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 }
 ```
 
-##XML
+## XML
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

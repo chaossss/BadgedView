@@ -8,7 +8,7 @@ PreView：
 
 ![](example.png)
 
-#Feature
+# Feature
 
 ## Implemented
 
@@ -25,13 +25,13 @@ PreView：
 - add other style of badge
 - add any number of badges u want without implementing a subclass of BadgedView
 
-#Usage
+# Usage
 
-##Dependency
+## Dependency
 
-###Min SDK：2.3.3
+### Min SDK：2.3.3
 
-###Add dependency
+### Add dependency
 
 Open you Project's build.gradle, and add line like this：
 
@@ -42,7 +42,7 @@ dependencies {
 }
 ```
 
-##Attr
+## Attr
 
 | Attr | usage |
 |---------|--------|
@@ -56,14 +56,14 @@ dependencies {
 | app:recbadgeGravity(RecBadgedView) | set rectangle badge's position |
 | app:tribadgeGravity(TriBadgedView) | set triangle badge's position |
 
-##API
+## API
 
 | API | usage |
 |---------|--------|
 | showBadge(boolean show) | show the badge |
 | setBadgeText(String newText) | set badge's text |
 
-##Customize BadgedView
+## Customize BadgedView
 
 1. Creates a subclass which extends from BadgedView，BadgedView completes attrs' initialize
 2. Adds your specified attr scope in subclass
@@ -75,7 +75,7 @@ If customized badge needed：
 5. Adds your specified attr scope in subclass
 6. Overrides initBadge() to finish drawing the badge you wanted. Please remember, u should draw your badge in the `Bitmap instance -> badge`, or u may meet some trouble
 
-##Activity
+## Activity
 
 ```java
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
